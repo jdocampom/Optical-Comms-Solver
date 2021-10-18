@@ -8,9 +8,25 @@
 import SwiftUI
 
 struct ContentView: View {
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        NavigationView {
+            Form {
+                Section(header: Text("Domain Conversions")) {
+                    List {
+                        NavigationLink(destination: OpticalToElectrical()) {
+                            Text("Optical to Electrical")
+                        }
+                    }
+                    List {
+                        NavigationLink(destination: ElectricalToOptical()) {
+                            Text("Electrical to Optical")
+                        }
+                    }
+                }
+            }
+            .navigationTitle("Optical Comms Solver")
+        }
     }
 }
 

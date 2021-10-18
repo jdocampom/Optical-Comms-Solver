@@ -7,8 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		86845CB9271A6383008B9764 /* Optical_Comms_SolverApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86845CA9271A6381008B9764 /* Optical_Comms_SolverApp.swift */; };
-		86845CBA271A6383008B9764 /* Optical_Comms_SolverApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86845CA9271A6381008B9764 /* Optical_Comms_SolverApp.swift */; };
+		862590ED271B3C9B00793567 /* OpticalSignal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 862590EC271B3C9B00793567 /* OpticalSignal.swift */; };
+		862590EE271B3C9B00793567 /* OpticalSignal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 862590EC271B3C9B00793567 /* OpticalSignal.swift */; };
+		862590F9271B5ECA00793567 /* Resources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 862590F8271B5ECA00793567 /* Resources.swift */; };
+		862590FA271B5ECA00793567 /* Resources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 862590F8271B5ECA00793567 /* Resources.swift */; };
+		862590FC271B5F4400793567 /* ElectricalToOptical.swift in Sources */ = {isa = PBXBuildFile; fileRef = 862590FB271B5F4400793567 /* ElectricalToOptical.swift */; };
+		862590FD271B5F4400793567 /* ElectricalToOptical.swift in Sources */ = {isa = PBXBuildFile; fileRef = 862590FB271B5F4400793567 /* ElectricalToOptical.swift */; };
+		862590FF271B5F5300793567 /* ElectricalSignal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 862590FE271B5F5300793567 /* ElectricalSignal.swift */; };
+		86259100271B5F5300793567 /* ElectricalSignal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 862590FE271B5F5300793567 /* ElectricalSignal.swift */; };
+		8673F082271AF3F90094BF61 /* OpticalToElectrical.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8673F081271AF3F90094BF61 /* OpticalToElectrical.swift */; };
+		8673F083271AF3F90094BF61 /* OpticalToElectrical.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8673F081271AF3F90094BF61 /* OpticalToElectrical.swift */; };
+		86845CB9271A6383008B9764 /* OpticalCommsSolverApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86845CA9271A6381008B9764 /* OpticalCommsSolverApp.swift */; };
+		86845CBA271A6383008B9764 /* OpticalCommsSolverApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86845CA9271A6381008B9764 /* OpticalCommsSolverApp.swift */; };
 		86845CBB271A6383008B9764 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86845CAA271A6381008B9764 /* ContentView.swift */; };
 		86845CBC271A6383008B9764 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86845CAA271A6381008B9764 /* ContentView.swift */; };
 		86845CBD271A6383008B9764 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86845CAB271A6383008B9764 /* Assets.xcassets */; };
@@ -16,7 +26,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		86845CA9271A6381008B9764 /* Optical_Comms_SolverApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Optical_Comms_SolverApp.swift; sourceTree = "<group>"; };
+		862590EC271B3C9B00793567 /* OpticalSignal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpticalSignal.swift; sourceTree = "<group>"; };
+		862590F8271B5ECA00793567 /* Resources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resources.swift; sourceTree = "<group>"; };
+		862590FB271B5F4400793567 /* ElectricalToOptical.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElectricalToOptical.swift; sourceTree = "<group>"; };
+		862590FE271B5F5300793567 /* ElectricalSignal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElectricalSignal.swift; sourceTree = "<group>"; };
+		8673F081271AF3F90094BF61 /* OpticalToElectrical.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpticalToElectrical.swift; sourceTree = "<group>"; };
+		86845CA9271A6381008B9764 /* OpticalCommsSolverApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpticalCommsSolverApp.swift; sourceTree = "<group>"; };
 		86845CAA271A6381008B9764 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		86845CAB271A6383008B9764 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		86845CB0271A6383008B9764 /* Optical Comms Solver.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Optical Comms Solver.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -42,6 +57,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		862590EF271B3CEC00793567 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				862590EC271B3C9B00793567 /* OpticalSignal.swift */,
+				862590FE271B5F5300793567 /* ElectricalSignal.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		862590F0271B3CFC00793567 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8673F081271AF3F90094BF61 /* OpticalToElectrical.swift */,
+				862590FB271B5F4400793567 /* ElectricalToOptical.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		862590F7271B5EA300793567 /* Extras */ = {
+			isa = PBXGroup;
+			children = (
+				862590F8271B5ECA00793567 /* Resources.swift */,
+			);
+			path = Extras;
+			sourceTree = "<group>";
+		};
 		86845CA3271A6381008B9764 = {
 			isa = PBXGroup;
 			children = (
@@ -54,8 +95,11 @@
 		86845CA8271A6381008B9764 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
-				86845CA9271A6381008B9764 /* Optical_Comms_SolverApp.swift */,
+				86845CA9271A6381008B9764 /* OpticalCommsSolverApp.swift */,
 				86845CAA271A6381008B9764 /* ContentView.swift */,
+				862590F7271B5EA300793567 /* Extras */,
+				862590F0271B3CFC00793567 /* View */,
+				862590EF271B3CEC00793567 /* Model */,
 				86845CAB271A6383008B9764 /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -123,7 +167,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1300;
-				LastUpgradeCheck = 1300;
+				LastUpgradeCheck = 1310;
 				TargetAttributes = {
 					86845CAF271A6383008B9764 = {
 						CreatedOnToolsVersion = 13.0;
@@ -176,8 +220,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				862590ED271B3C9B00793567 /* OpticalSignal.swift in Sources */,
 				86845CBB271A6383008B9764 /* ContentView.swift in Sources */,
-				86845CB9271A6383008B9764 /* Optical_Comms_SolverApp.swift in Sources */,
+				86845CB9271A6383008B9764 /* OpticalCommsSolverApp.swift in Sources */,
+				862590FF271B5F5300793567 /* ElectricalSignal.swift in Sources */,
+				862590F9271B5ECA00793567 /* Resources.swift in Sources */,
+				8673F082271AF3F90094BF61 /* OpticalToElectrical.swift in Sources */,
+				862590FC271B5F4400793567 /* ElectricalToOptical.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -185,8 +234,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				862590EE271B3C9B00793567 /* OpticalSignal.swift in Sources */,
 				86845CBC271A6383008B9764 /* ContentView.swift in Sources */,
-				86845CBA271A6383008B9764 /* Optical_Comms_SolverApp.swift in Sources */,
+				86845CBA271A6383008B9764 /* OpticalCommsSolverApp.swift in Sources */,
+				86259100271B5F5300793567 /* ElectricalSignal.swift in Sources */,
+				862590FA271B5ECA00793567 /* Resources.swift in Sources */,
+				8673F083271AF3F90094BF61 /* OpticalToElectrical.swift in Sources */,
+				862590FD271B5F4400793567 /* ElectricalToOptical.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -311,7 +365,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = D27X6VQP35;
+				DEVELOPMENT_TEAM = VAPH6Z28G5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -325,7 +379,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.jdocampom.wixsite.Optical-Comms-Solver";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jdocampom.wixsite.Optical-Comms-SolverTest";
 				PRODUCT_NAME = "Optical Comms Solver";
 				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -341,7 +395,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = D27X6VQP35;
+				DEVELOPMENT_TEAM = VAPH6Z28G5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -355,7 +409,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.jdocampom.wixsite.Optical-Comms-Solver";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jdocampom.wixsite.Optical-Comms-SolverTest";
 				PRODUCT_NAME = "Optical Comms Solver";
 				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -371,6 +425,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -399,6 +454,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
