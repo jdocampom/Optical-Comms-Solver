@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8621DE5D271E37F700FC2E81 /* DecimalField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8621DE5C271E37F700FC2E81 /* DecimalField.swift */; };
+		8621DE5E271E37F700FC2E81 /* DecimalField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8621DE5C271E37F700FC2E81 /* DecimalField.swift */; };
 		862590ED271B3C9B00793567 /* OpticalSignal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 862590EC271B3C9B00793567 /* OpticalSignal.swift */; };
 		862590EE271B3C9B00793567 /* OpticalSignal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 862590EC271B3C9B00793567 /* OpticalSignal.swift */; };
 		862590F9271B5ECA00793567 /* Resources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 862590F8271B5ECA00793567 /* Resources.swift */; };
@@ -26,6 +28,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8621DE5C271E37F700FC2E81 /* DecimalField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DecimalField.swift; sourceTree = "<group>"; };
 		862590EC271B3C9B00793567 /* OpticalSignal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpticalSignal.swift; sourceTree = "<group>"; };
 		862590F8271B5ECA00793567 /* Resources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resources.swift; sourceTree = "<group>"; };
 		862590FB271B5F4400793567 /* ElectricalToOptical.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElectricalToOptical.swift; sourceTree = "<group>"; };
@@ -79,6 +82,7 @@
 			isa = PBXGroup;
 			children = (
 				862590F8271B5ECA00793567 /* Resources.swift */,
+				8621DE5C271E37F700FC2E81 /* DecimalField.swift */,
 			);
 			path = Extras;
 			sourceTree = "<group>";
@@ -220,6 +224,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8621DE5D271E37F700FC2E81 /* DecimalField.swift in Sources */,
 				862590ED271B3C9B00793567 /* OpticalSignal.swift in Sources */,
 				86845CBB271A6383008B9764 /* ContentView.swift in Sources */,
 				86845CB9271A6383008B9764 /* OpticalCommsSolverApp.swift in Sources */,
@@ -234,6 +239,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8621DE5E271E37F700FC2E81 /* DecimalField.swift in Sources */,
 				862590EE271B3C9B00793567 /* OpticalSignal.swift in Sources */,
 				86845CBC271A6383008B9764 /* ContentView.swift in Sources */,
 				86845CBA271A6383008B9764 /* OpticalCommsSolverApp.swift in Sources */,

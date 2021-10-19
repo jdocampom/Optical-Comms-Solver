@@ -9,11 +9,13 @@ import SwiftUI
 import Combine
 
 struct OpticalToElectrical: View, Identifiable {
+
     
     @State var wavelength: String = ""
     @State var spectralWidth: String = "0"
     var id = UUID()
     var body: some View {
+
         let signal = OpticalSignal(wavelength: wavelength, spectralWidth: spectralWidth)
 //        Background {
             Form {
@@ -24,12 +26,18 @@ struct OpticalToElectrical: View, Identifiable {
                         TextField("e.g.: 850", text: $wavelength, onCommit: {self.endEditing()})
                             .keyboardType(.decimalPad)
                             .frame(width: 100, height: 30, alignment: .trailing)
-                            .onReceive(Just(wavelength)) { newValue in
-                                            let filtered = newValue.filter { "0123456789".contains($0) }
-                                            if filtered != newValue {
-                                                self.wavelength = filtered
-                                            }
+                            .onChange(of: wavelength) { _ in
+                                let filtered = wavelength.filter {"0123456789.".contains($0)}
+                                
+                                if filtered.contains(".") {
+                                    let splitted = filtered.split(separator: ".", omittingEmptySubsequences: false)
+                                    if splitted.count >= 2 {
+                                        let preDecimal = String(splitted[0])
+                                        let afterDecimal = String(splitted[1])
+                                        wavelength = "\(preDecimal).\(afterDecimal)"
                                     }
+                                }
+                            }
                     }
                     HStack{
                         Text("Spectral Width (nm)")
@@ -37,12 +45,18 @@ struct OpticalToElectrical: View, Identifiable {
                         TextField("e.g.: 10", text: $spectralWidth, onCommit: {self.endEditing()})
                             .keyboardType(.decimalPad)
                             .frame(width: 100, height: 30, alignment: .trailing)
-                            .onReceive(Just(spectralWidth)) { newValue in
-                                            let filtered = newValue.filter { "0123456789".contains($0) }
-                                            if filtered != newValue {
-                                                self.spectralWidth = filtered
-                                            }
+                            .onChange(of: spectralWidth) { _ in
+                                let filtered = spectralWidth.filter {"0123456789.".contains($0)}
+                                
+                                if filtered.contains(".") {
+                                    let splitted = filtered.split(separator: ".", omittingEmptySubsequences: false)
+                                    if splitted.count >= 2 {
+                                        let preDecimal = String(splitted[0])
+                                        let afterDecimal = String(splitted[1])
+                                        spectralWidth = "\(preDecimal).\(afterDecimal)"
                                     }
+                                }
+                            }
                     }
                 }
                 Section(header: Text("Electrical Domain Characteristics")) {
