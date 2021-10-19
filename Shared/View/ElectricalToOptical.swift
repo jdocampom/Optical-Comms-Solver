@@ -22,40 +22,11 @@ struct ElectricalToOptical: View {
                 HStack{
                     Text("Frequency (THz)")
                     Spacer()
-                    TextField("e.g.: 250", text: $frequency, onCommit: {self.endEditing()})
-                        .keyboardType(.decimalPad)
-                        .frame(width: 100, height: 30, alignment: .trailing)
-                        .onChange(of: frequency) { _ in
-                            let filtered = frequency.filter {"0123456789.".contains($0)}
-                            
-                            if filtered.contains(".") {
-                                let splitted = filtered.split(separator: ".", omittingEmptySubsequences: false)
-                                if splitted.count >= 2 {
-                                    let preDecimal = String(splitted[0])
-                                    let afterDecimal = String(splitted[1])
-                                    frequency = "\(preDecimal).\(afterDecimal)"
-                                }
-                            }
-                        }
-                }
+                    DecimalField(placeholder: "e.g.: 250", field: $frequency)                }
                 HStack{
                     Text("Bandwidth (THz)")
                     Spacer()
-                    TextField("e.g.: 2", text: $bandwidth, onCommit: {self.endEditing()})
-                        .keyboardType(.decimalPad)
-                        .frame(width: 100, height: 30, alignment: .trailing)
-                        .onChange(of: bandwidth) { _ in
-                            let filtered = bandwidth.filter {"0123456789.".contains($0)}
-                            
-                            if filtered.contains(".") {
-                                let splitted = filtered.split(separator: ".", omittingEmptySubsequences: false)
-                                if splitted.count >= 2 {
-                                    let preDecimal = String(splitted[0])
-                                    let afterDecimal = String(splitted[1])
-                                    bandwidth = "\(preDecimal).\(afterDecimal)"
-                                }
-                            }
-                        }
+                    DecimalField(placeholder: "e.g.: 2", field: $bandwidth)
                 }
                 HStack {
                     Text("Lower Frequency Limit (THz)")
