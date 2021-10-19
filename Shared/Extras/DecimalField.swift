@@ -18,7 +18,7 @@ struct DecimalField: View {
             .keyboardType(.decimalPad)
             .multilineTextAlignment(.trailing)
             .frame(width: 100, height: 30)
-            .textSelection(.disabled)
+            .disableAutocorrection(true)
             .onChange(of: field) { _ in
                 let filtered = field.filter {"0123456789.".contains($0)}
                 if filtered.contains(".") {
