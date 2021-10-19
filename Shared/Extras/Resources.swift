@@ -22,6 +22,13 @@ struct Background<Content: View>: View {
     }
 }
 
+extension View {
+
+    func customStyle() -> some View {
+//        self.font(Font.system(size: 15))
+        self.font(.body)
+    }
+}
 
 extension UIApplication {
     func endEditing() {

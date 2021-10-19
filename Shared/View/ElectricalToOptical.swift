@@ -20,33 +20,33 @@ struct ElectricalToOptical: View {
         Form {
             Section(header: Text("Electrical Domain Characteristics")) {
                 HStack{
-                    Text("Frequency (THz)")
+                    Text("Frequency (THz)").customStyle()
                     Spacer()
                     DecimalField(placeholder: "e.g.: 250", field: $frequency)                }
                 HStack{
-                    Text("Bandwidth (THz)")
+                    Text("Bandwidth (THz)").customStyle()
                     Spacer()
                     DecimalField(placeholder: "e.g.: 2", field: $bandwidth)
                 }
                 HStack {
-                    Text("Lower Frequency Limit (THz)")
+                    Text("Lower Frequency Limit (THz)").customStyle()
                     Spacer()
                     Text(signal.lowerLimit)
                 }
                 HStack {
-                    Text("Upper Frequency Limit (THz)")
+                    Text("Upper Frequency Limit (THz)").customStyle()
                     Spacer()
                     Text(signal.upperLimit)
                 }
             }
             Section(header: Text("Optical Domain Characteristics")) {
                 HStack {
-                    Text("Wavelength (nm)")
+                    Text("Wavelength (nm)").customStyle()
                     Spacer()
                     Text(signal.wavelength)
                 }
                 HStack {
-                    Text("Spectral Width (nm)")
+                    Text("Spectral Width (nm)").customStyle()
                     Spacer()
                     Text(signal.spectralWidth)
                 }

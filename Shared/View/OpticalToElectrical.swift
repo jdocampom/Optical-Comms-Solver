@@ -21,34 +21,34 @@ struct OpticalToElectrical: View, Identifiable {
             Form {
                 Section(header: Text("Optical Domain Characteristics")) {
                     HStack{
-                        Text("Wavelength (nm)")
+                        Text("Wavelength (nm)").customStyle()
                         Spacer()
                         DecimalField(placeholder: "e.g.: 1550", field: $wavelength)
                     }
                     HStack{
-                        Text("Spectral Width (nm)")
+                        Text("Spectral Width (nm)").customStyle()
                         Spacer()
                         DecimalField(placeholder: "e.g.: 10", field: $spectralWidth)
                     }
                 }
                 Section(header: Text("Electrical Domain Characteristics")) {
                     HStack {
-                        Text("Frequency (THz)")
+                        Text("Frequency (THz)").customStyle()
                         Spacer()
                         Text(signal.frequency)
                     }
                     HStack {
-                        Text("Lower Frequency Limit (THz)")
+                        Text("Lower Frequency Limit (THz)").customStyle()
                         Spacer()
                         Text(signal.lowerLimit)
                     }
                     HStack {
-                        Text("Upper Frequency Limit (THz)")
+                        Text("Upper Frequency Limit (THz)").customStyle()
                         Spacer()
                         Text(signal.upperLimit)
                     }
                     HStack {
-                        Text("Bandwidth (THz)")
+                        Text("Bandwidth (THz)").customStyle()
                         Spacer()
                         Text(signal.bandwidth)
                     }
