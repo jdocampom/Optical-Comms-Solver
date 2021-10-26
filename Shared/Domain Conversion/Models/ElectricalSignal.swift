@@ -9,7 +9,7 @@ import Foundation
 
 struct ElectricalSignal: Identifiable {
     
-    let speedOfLight: Double = 3E8
+    let speedOfLight = Constants().speedOfLight
     var id = UUID()
     var frequency: String?
     var bandwidth: String?

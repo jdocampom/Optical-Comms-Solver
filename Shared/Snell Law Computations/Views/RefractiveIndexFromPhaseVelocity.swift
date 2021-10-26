@@ -41,7 +41,7 @@ struct RefractiveIndexFromPhaseVelocity: View {
     
     func computeRefractiveIndex(from phaseVelocity: String?) -> String {
         guard let velocity = phaseVelocity, let unwrappedVelocity = Double(velocity) else{ return "-" }
-        let speedOfLight: Double = 299792498
+        let speedOfLight = Constants().speedOfLight
         let refractiveIndex = speedOfLight / unwrappedVelocity
         return formatter.string(from: NSNumber(value: refractiveIndex))!
     }

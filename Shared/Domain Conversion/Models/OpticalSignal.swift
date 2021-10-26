@@ -9,7 +9,7 @@ import Foundation
 
 struct OpticalSignal: Identifiable {
     
-    let speedOfLight: Double = 3E8
+    let speedOfLight = Constants().speedOfLight
     var id = UUID()
     var title: String = "Wavelength to Frequency"
     var wavelength: String?

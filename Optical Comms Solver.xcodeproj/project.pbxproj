@@ -14,6 +14,7 @@
 		861D319227277F4E002516F7 /* ComputeTransmittedAngle_SnellLaw.swift in Sources */ = {isa = PBXBuildFile; fileRef = 861D319127277F4E002516F7 /* ComputeTransmittedAngle_SnellLaw.swift */; };
 		861D319427277FB3002516F7 /* ComputeCriticalAngle_SnellLaw.swift in Sources */ = {isa = PBXBuildFile; fileRef = 861D319327277FB3002516F7 /* ComputeCriticalAngle_SnellLaw.swift */; };
 		861D3196272781A0002516F7 /* RefractiveIndexFromPhaseVelocity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 861D3195272781A0002516F7 /* RefractiveIndexFromPhaseVelocity.swift */; };
+		861D319827278539002516F7 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 861D319727278539002516F7 /* Constants.swift */; };
 		8621DE5D271E37F700FC2E81 /* DecimalField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8621DE5C271E37F700FC2E81 /* DecimalField.swift */; };
 		8621DE5E271E37F700FC2E81 /* DecimalField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8621DE5C271E37F700FC2E81 /* DecimalField.swift */; };
 		862590ED271B3C9B00793567 /* OpticalSignal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 862590EC271B3C9B00793567 /* OpticalSignal.swift */; };
@@ -42,6 +43,7 @@
 		861D319127277F4E002516F7 /* ComputeTransmittedAngle_SnellLaw.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComputeTransmittedAngle_SnellLaw.swift; sourceTree = "<group>"; };
 		861D319327277FB3002516F7 /* ComputeCriticalAngle_SnellLaw.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComputeCriticalAngle_SnellLaw.swift; sourceTree = "<group>"; };
 		861D3195272781A0002516F7 /* RefractiveIndexFromPhaseVelocity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefractiveIndexFromPhaseVelocity.swift; sourceTree = "<group>"; };
+		861D319727278539002516F7 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		8621DE5C271E37F700FC2E81 /* DecimalField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DecimalField.swift; sourceTree = "<group>"; };
 		862590EC271B3C9B00793567 /* OpticalSignal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpticalSignal.swift; sourceTree = "<group>"; };
 		862590F8271B5ECA00793567 /* Resources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resources.swift; sourceTree = "<group>"; };
@@ -136,6 +138,7 @@
 			children = (
 				862590F8271B5ECA00793567 /* Resources.swift */,
 				8621DE5C271E37F700FC2E81 /* DecimalField.swift */,
+				861D319727278539002516F7 /* Constants.swift */,
 			);
 			path = Extras;
 			sourceTree = "<group>";
@@ -284,6 +287,7 @@
 				86845CBB271A6383008B9764 /* ContentView.swift in Sources */,
 				861D318C272778C6002516F7 /* ComputeCoreRefractiveIndex_SnellLaw.swift in Sources */,
 				861D3196272781A0002516F7 /* RefractiveIndexFromPhaseVelocity.swift in Sources */,
+				861D319827278539002516F7 /* Constants.swift in Sources */,
 				861D319427277FB3002516F7 /* ComputeCriticalAngle_SnellLaw.swift in Sources */,
 				861D319227277F4E002516F7 /* ComputeTransmittedAngle_SnellLaw.swift in Sources */,
 				86845CB9271A6383008B9764 /* OpticalCommsSolverApp.swift in Sources */,
