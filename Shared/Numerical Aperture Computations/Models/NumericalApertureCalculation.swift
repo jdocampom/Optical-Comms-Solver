@@ -1,4 +1,10 @@
-//: [Previous](@previous)
+//
+//  NumericalApertureCalculation.swift
+//  Optical Comms Solver (iOS)
+//
+//  Created by Juan Diego Ocampo on 10/25/21.
+//
+
 import Foundation
 
 struct NumericalApertureCalculation: Identifiable {
@@ -55,23 +61,3 @@ struct NumericalApertureCalculation: Identifiable {
     }
     
 }
-
-let test1 = NumericalApertureCalculation().compute(from: .acceptanceAngle, n0: "1.3", thetaA: "22")
-let test2 = NumericalApertureCalculation().compute(from: .criticalAngle,n1: "1.6", thetaC: "80")
-let test3 = NumericalApertureCalculation().compute(from: .refractionIndices, n1: "1.6", n2: "1.3")
-let test4 = NumericalApertureCalculation().compute(from: .knownDeltaN, n1: "1.3", delta: "0.03")
-let test5 = NumericalApertureCalculation().compute(from: .unknownDeltaN, n1: "1.6", n2: "1.3")
-
-print("-\tExperiment Results:")
-print("NA (Case 1) = \(test1)")
-print("NA (Case 2) = \(test2)")
-print("NA (Case 3) = \(test3)")
-print("NA (Case 4) = \(test4)")
-print("NA (Case 5) = \(test5)")
-
-
-
-
-
-
-//: [Next](@next)

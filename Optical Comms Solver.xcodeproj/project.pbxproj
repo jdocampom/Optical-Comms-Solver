@@ -15,6 +15,15 @@
 		861D319427277FB3002516F7 /* ComputeCriticalAngle_SnellLaw.swift in Sources */ = {isa = PBXBuildFile; fileRef = 861D319327277FB3002516F7 /* ComputeCriticalAngle_SnellLaw.swift */; };
 		861D3196272781A0002516F7 /* RefractiveIndexFromPhaseVelocity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 861D3195272781A0002516F7 /* RefractiveIndexFromPhaseVelocity.swift */; };
 		861D319827278539002516F7 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 861D319727278539002516F7 /* Constants.swift */; };
+		861D319D27279DD5002516F7 /* MaxAcceptanceAngleCalculation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 861D319C27279DD5002516F7 /* MaxAcceptanceAngleCalculation.swift */; };
+		861D319F27279E0D002516F7 /* ComputeAcceptanceAngleFromNA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 861D319E27279E0D002516F7 /* ComputeAcceptanceAngleFromNA.swift */; };
+		861D31A127279E1B002516F7 /* ComputeAcceptanceAngleFromCriticalAngle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 861D31A027279E1B002516F7 /* ComputeAcceptanceAngleFromCriticalAngle.swift */; };
+		861D31A62727A3AB002516F7 /* NumericalApertureCalculation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 861D31A52727A3AB002516F7 /* NumericalApertureCalculation.swift */; };
+		861D31A82727A3F9002516F7 /* ComputeNAFromAcceptanceAngle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 861D31A72727A3F9002516F7 /* ComputeNAFromAcceptanceAngle.swift */; };
+		861D31AA2727A49C002516F7 /* ComputeNAFromCriticalAngle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 861D31A92727A49C002516F7 /* ComputeNAFromCriticalAngle.swift */; };
+		861D31AC2727A4F2002516F7 /* ComputeNAFromRefractiveIndices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 861D31AB2727A4F2002516F7 /* ComputeNAFromRefractiveIndices.swift */; };
+		861D31AE2727A58F002516F7 /* ComputeNAFromKnownDeltaN.swift in Sources */ = {isa = PBXBuildFile; fileRef = 861D31AD2727A58F002516F7 /* ComputeNAFromKnownDeltaN.swift */; };
+		861D31B02727A604002516F7 /* ComputeNAFromUnknownDeltaN.swift in Sources */ = {isa = PBXBuildFile; fileRef = 861D31AF2727A604002516F7 /* ComputeNAFromUnknownDeltaN.swift */; };
 		8621DE5D271E37F700FC2E81 /* DecimalField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8621DE5C271E37F700FC2E81 /* DecimalField.swift */; };
 		8621DE5E271E37F700FC2E81 /* DecimalField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8621DE5C271E37F700FC2E81 /* DecimalField.swift */; };
 		862590ED271B3C9B00793567 /* OpticalSignal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 862590EC271B3C9B00793567 /* OpticalSignal.swift */; };
@@ -44,6 +53,15 @@
 		861D319327277FB3002516F7 /* ComputeCriticalAngle_SnellLaw.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComputeCriticalAngle_SnellLaw.swift; sourceTree = "<group>"; };
 		861D3195272781A0002516F7 /* RefractiveIndexFromPhaseVelocity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefractiveIndexFromPhaseVelocity.swift; sourceTree = "<group>"; };
 		861D319727278539002516F7 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		861D319C27279DD5002516F7 /* MaxAcceptanceAngleCalculation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaxAcceptanceAngleCalculation.swift; sourceTree = "<group>"; };
+		861D319E27279E0D002516F7 /* ComputeAcceptanceAngleFromNA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComputeAcceptanceAngleFromNA.swift; sourceTree = "<group>"; };
+		861D31A027279E1B002516F7 /* ComputeAcceptanceAngleFromCriticalAngle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComputeAcceptanceAngleFromCriticalAngle.swift; sourceTree = "<group>"; };
+		861D31A52727A3AB002516F7 /* NumericalApertureCalculation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumericalApertureCalculation.swift; sourceTree = "<group>"; };
+		861D31A72727A3F9002516F7 /* ComputeNAFromAcceptanceAngle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComputeNAFromAcceptanceAngle.swift; sourceTree = "<group>"; };
+		861D31A92727A49C002516F7 /* ComputeNAFromCriticalAngle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComputeNAFromCriticalAngle.swift; sourceTree = "<group>"; };
+		861D31AB2727A4F2002516F7 /* ComputeNAFromRefractiveIndices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComputeNAFromRefractiveIndices.swift; sourceTree = "<group>"; };
+		861D31AD2727A58F002516F7 /* ComputeNAFromKnownDeltaN.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComputeNAFromKnownDeltaN.swift; sourceTree = "<group>"; };
+		861D31AF2727A604002516F7 /* ComputeNAFromUnknownDeltaN.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComputeNAFromUnknownDeltaN.swift; sourceTree = "<group>"; };
 		8621DE5C271E37F700FC2E81 /* DecimalField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DecimalField.swift; sourceTree = "<group>"; };
 		862590EC271B3C9B00793567 /* OpticalSignal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpticalSignal.swift; sourceTree = "<group>"; };
 		862590F8271B5ECA00793567 /* Resources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resources.swift; sourceTree = "<group>"; };
@@ -115,6 +133,61 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		861D319927279D7B002516F7 /* Acceptance Angle Computations */ = {
+			isa = PBXGroup;
+			children = (
+				861D319A27279DB2002516F7 /* Models */,
+				861D319B27279DBC002516F7 /* Views */,
+			);
+			path = "Acceptance Angle Computations";
+			sourceTree = "<group>";
+		};
+		861D319A27279DB2002516F7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				861D319C27279DD5002516F7 /* MaxAcceptanceAngleCalculation.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		861D319B27279DBC002516F7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				861D319E27279E0D002516F7 /* ComputeAcceptanceAngleFromNA.swift */,
+				861D31A027279E1B002516F7 /* ComputeAcceptanceAngleFromCriticalAngle.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		861D31A22727A37D002516F7 /* Numerical Aperture Computations */ = {
+			isa = PBXGroup;
+			children = (
+				861D31A32727A393002516F7 /* Models */,
+				861D31A42727A397002516F7 /* Views */,
+			);
+			path = "Numerical Aperture Computations";
+			sourceTree = "<group>";
+		};
+		861D31A32727A393002516F7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				861D31A52727A3AB002516F7 /* NumericalApertureCalculation.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		861D31A42727A397002516F7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				861D31A72727A3F9002516F7 /* ComputeNAFromAcceptanceAngle.swift */,
+				861D31A92727A49C002516F7 /* ComputeNAFromCriticalAngle.swift */,
+				861D31AB2727A4F2002516F7 /* ComputeNAFromRefractiveIndices.swift */,
+				861D31AD2727A58F002516F7 /* ComputeNAFromKnownDeltaN.swift */,
+				861D31AF2727A604002516F7 /* ComputeNAFromUnknownDeltaN.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		862590EF271B3CEC00793567 /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -155,12 +228,14 @@
 		86845CA8271A6381008B9764 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				86845CAB271A6383008B9764 /* Assets.xcassets */,
 				86845CA9271A6381008B9764 /* OpticalCommsSolverApp.swift */,
 				86845CAA271A6381008B9764 /* ContentView.swift */,
-				862590F7271B5EA300793567 /* Extras */,
 				862590F0271B3CFC00793567 /* Domain Conversion */,
 				861D31862727784E002516F7 /* Snell Law Computations */,
-				86845CAB271A6383008B9764 /* Assets.xcassets */,
+				861D319927279D7B002516F7 /* Acceptance Angle Computations */,
+				861D31A22727A37D002516F7 /* Numerical Aperture Computations */,
+				862590F7271B5EA300793567 /* Extras */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -281,18 +356,27 @@
 			buildActionMask = 2147483647;
 			files = (
 				861D318A27277893002516F7 /* SnellLawComputation.swift in Sources */,
+				861D319D27279DD5002516F7 /* MaxAcceptanceAngleCalculation.swift in Sources */,
 				8621DE5D271E37F700FC2E81 /* DecimalField.swift in Sources */,
 				861D318E27277DE9002516F7 /* ComputeCladdingRefractiveIndex_SnellLaw.swift in Sources */,
+				861D31AC2727A4F2002516F7 /* ComputeNAFromRefractiveIndices.swift in Sources */,
 				862590ED271B3C9B00793567 /* OpticalSignal.swift in Sources */,
 				86845CBB271A6383008B9764 /* ContentView.swift in Sources */,
 				861D318C272778C6002516F7 /* ComputeCoreRefractiveIndex_SnellLaw.swift in Sources */,
 				861D3196272781A0002516F7 /* RefractiveIndexFromPhaseVelocity.swift in Sources */,
 				861D319827278539002516F7 /* Constants.swift in Sources */,
+				861D319F27279E0D002516F7 /* ComputeAcceptanceAngleFromNA.swift in Sources */,
 				861D319427277FB3002516F7 /* ComputeCriticalAngle_SnellLaw.swift in Sources */,
 				861D319227277F4E002516F7 /* ComputeTransmittedAngle_SnellLaw.swift in Sources */,
+				861D31B02727A604002516F7 /* ComputeNAFromUnknownDeltaN.swift in Sources */,
+				861D31A62727A3AB002516F7 /* NumericalApertureCalculation.swift in Sources */,
+				861D31AE2727A58F002516F7 /* ComputeNAFromKnownDeltaN.swift in Sources */,
 				86845CB9271A6383008B9764 /* OpticalCommsSolverApp.swift in Sources */,
+				861D31A127279E1B002516F7 /* ComputeAcceptanceAngleFromCriticalAngle.swift in Sources */,
 				862590FF271B5F5300793567 /* ElectricalSignal.swift in Sources */,
 				862590F9271B5ECA00793567 /* Resources.swift in Sources */,
+				861D31A82727A3F9002516F7 /* ComputeNAFromAcceptanceAngle.swift in Sources */,
+				861D31AA2727A49C002516F7 /* ComputeNAFromCriticalAngle.swift in Sources */,
 				861D319027277ED6002516F7 /* ComputeIncidentAngle_SnellLaw.swift in Sources */,
 				8673F082271AF3F90094BF61 /* OpticalToElectrical.swift in Sources */,
 				862590FC271B5F4400793567 /* ElectricalToOptical.swift in Sources */,

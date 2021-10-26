@@ -24,10 +24,10 @@ struct ContentView: View {
                         }
                     }
                 }
-                Section(header: Text("Snell Law Computations")) {
+                Section(header: Text("Snell's Law")) {
                     List {
                         NavigationLink(destination: RefractiveIndexFromPhaseVelocity()) {
-                            Text("Refractive Index")
+                            Text("Compute Refractive Index")
                         }
                     }
                     List {
@@ -53,6 +53,45 @@ struct ContentView: View {
                     List {
                         NavigationLink(destination: ComputeCriticalAngle_SnellLaw()) {
                             Text("Critical Angle")
+                        }
+                    }
+                }
+                Section(header: Text("Maximum Acceptance Angle")) {
+                    List {
+                        NavigationLink(destination: ComputeAcceptanceAngleFromNA()) {
+                            Text("From Numerical Aperture")
+                        }
+                    }
+                    List {
+                        NavigationLink(destination: ComputeAcceptanceAngleFromCriticalAngle()) {
+                            Text("From Critical Angle")
+                        }
+                    }
+                }
+                Section(header: Text("Numerical Aperture")) {
+                    List {
+                        NavigationLink(destination: ComputeNAFromAcceptanceAngle()) {
+                            Text("From Acceptance Angle")
+                        }
+                    }
+                    List {
+                        NavigationLink(destination: ComputeNAFromCriticalAngle()) {
+                            Text("From Critical Angle")
+                        }
+                    }
+                    List {
+                        NavigationLink(destination: ComputeNAFromRefractiveIndices()) {
+                            Text("From Refractive Indices")
+                        }
+                    }
+                    List {
+                        NavigationLink(destination: ComputeNAFromKnownDeltaN()) {
+                            Text("From Known Delta (Graded Index)")
+                        }
+                    }
+                    List {
+                        NavigationLink(destination: ComputeNAFromUnknownDeltaN()) {
+                            Text("From Unknown Delta (Graded Index)")
                         }
                     }
                 }
