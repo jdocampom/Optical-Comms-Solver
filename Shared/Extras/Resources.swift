@@ -26,7 +26,7 @@ extension View {
 
     func customStyle() -> some View {
 //        self.font(Font.system(size: 15))
-        self.font(.body)
+        self.font(.subheadline)
     }
 }
 

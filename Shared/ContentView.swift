@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
-    
+
     var body: some View {
         NavigationView {
             Form {
@@ -21,6 +21,38 @@ struct ContentView: View {
                     List {
                         NavigationLink(destination: ElectricalToOptical()) {
                             Text("Electrical to Optical")
+                        }
+                    }
+                }
+                Section(header: Text("Snell Law Computations")) {
+                    List {
+                        NavigationLink(destination: RefractiveIndexFromPhaseVelocity()) {
+                            Text("Refractive Index")
+                        }
+                    }
+                    List {
+                        NavigationLink(destination: ComputeCoreRefractiveIndex_SnellLaw()) {
+                            Text("Core Refractive Index")
+                        }
+                    }
+                    List {
+                        NavigationLink(destination: ComputeCladdingRefractiveIndex_SnellLaw()) {
+                            Text("Cladding Refractive Index")
+                        }
+                    }
+                    List {
+                        NavigationLink(destination: ComputeIncidentAngle_SnellLaw()) {
+                            Text("Incident Angle")
+                        }
+                    }
+                    List {
+                        NavigationLink(destination: ComputeTransmittedAngle_SnellLaw()) {
+                            Text("Transmitted Angle")
+                        }
+                    }
+                    List {
+                        NavigationLink(destination: ComputeCriticalAngle_SnellLaw()) {
+                            Text("Critical Angle")
                         }
                     }
                 }

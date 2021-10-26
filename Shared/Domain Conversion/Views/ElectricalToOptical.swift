@@ -9,15 +9,15 @@ import SwiftUI
 import Combine
 
 struct ElectricalToOptical: View {
+    
     @State var frequency: String = ""
     @State var bandwidth: String = "0"
 
     var id = UUID()
     var body: some View {
-
         let signal = ElectricalSignal(frequency: frequency, bandwidth: bandwidth)
         //        Background {
-        Form {
+        return Form {
             Section(header: Text("Electrical Domain Characteristics")) {
                 HStack{
                     Text("Frequency (THz)").customStyle()

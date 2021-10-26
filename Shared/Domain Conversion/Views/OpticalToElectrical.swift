@@ -10,15 +10,14 @@ import Combine
 
 struct OpticalToElectrical: View, Identifiable {
 
-    
     @State var wavelength: String = ""
     @State var spectralWidth: String = "0"
+    
     var id = UUID()
     var body: some View {
-
         let signal = OpticalSignal(wavelength: wavelength, spectralWidth: spectralWidth)
 //        Background {
-            Form {
+        return Form {
                 Section(header: Text("Optical Domain Characteristics")) {
                     HStack{
                         Text("Wavelength (nm)").customStyle()

@@ -1,10 +1,10 @@
-//
-//  OpticalSignal.swift
-//  Optical Comms Solver
-//
-//  Created by Juan Diego Ocampo on 10/16/21.
-//
+/*:
+## Electrical to Optical
 
+The following `struct` creates a custom data type used to initialise an optical signal alongside with its parameters: wavelength and spectral width (both measured in nanometres).
+
+It has an instance method that converts those optical domain parameters to their electrical equivalents measured in THz (frequency, bandwidth and frequency range).
+ */
 import Foundation
 
 struct OpticalSignal: Identifiable {
@@ -25,20 +25,22 @@ struct OpticalSignal: Identifiable {
         return formatter
     }
     
+    func format(number: String?) -> String {
+        guard let number = number, let unwrappedNumber = Double(number) else{ return "-" }
+        let formattedNumber = formatter.string(from: NSNumber(value: unwrappedNumber))!
+        return formattedNumber
+    }
+    
     /// Tag: Convert from Optical to Electrical Domain
     func toElectricalDomain(lambda: String?, spectralWidth: String?) -> (frequency: String, upperLimit: String, lowerLimit: String, bandwidth: String) {
         // Optional Unwrapping
-        guard let lambda = lambda, let spectralWidth = spectralWidth else {
-            let frequency = "-", upperLimit = "-", lowerLimit = "-", bandwidth = "-"
-            return (frequency, upperLimit, lowerLimit, bandwidth)
-        }
-        guard let wavelength = Double(lambda) , let spectralWidth = Double(spectralWidth) else {
+        guard let lambda = lambda, let spectralWidth = spectralWidth, let unwrappedWavelength = Double(lambda) , let unwrappedSpectralWidth = Double(spectralWidth) else {
             let frequency = "-", upperLimit = "-", lowerLimit = "-", bandwidth = "-"
             return (frequency, upperLimit, lowerLimit, bandwidth)
         }
         // Unit Scaling
-        let scaledWavelength = wavelength * 1E-9
-        let scaledSpectralWidth = spectralWidth * 1E-9
+        let scaledWavelength = unwrappedWavelength * 1E-9
+        let scaledSpectralWidth = unwrappedSpectralWidth * 1E-9
         // Performing Calculations
         let f: Double = (speedOfLight / scaledWavelength) / 1E12
         let fh: Double = (speedOfLight / (scaledWavelength - (scaledSpectralWidth/2))) / 1E12
@@ -52,3 +54,21 @@ struct OpticalSignal: Identifiable {
         return (frequency, upperLimit, lowerLimit, bandwidth)
     }
 }
+
+//: - Experiment:
+//: Modify the `opticalSignalTest` declaration to convert parameters from an optical signal to the electrical domain.
+//:
+
+let opticalSignalTest = OpticalSignal(wavelength: "1550", spectralWidth: "10")
+
+print("-\tOptical Domain Data:")
+print("Wavelength: \(opticalSignalTest.wavelength ?? "-") nm")
+print("Bandwidth: \(opticalSignalTest.spectralWidth ?? "-") nm")
+print("")
+print("-\tElectrical Domain Data:")
+print("Frequency: \(opticalSignalTest.frequency) THz")
+print("Bandwidth: \(opticalSignalTest.bandwidth) THz")
+print("Frequency Range: \(opticalSignalTest.lowerLimit) - \(opticalSignalTest.upperLimit) THz")
+
+//: Page 1 of X  |  [Domain Conversion (Part 2)](@next)
+

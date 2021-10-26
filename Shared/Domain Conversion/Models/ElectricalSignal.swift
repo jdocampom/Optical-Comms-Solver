@@ -45,20 +45,22 @@ struct ElectricalSignal: Identifiable {
         return formatter
     }
     
+    func format(number: String?) -> String {
+        guard let number = number, let unwrappedNumber = Double(number) else{ return "-" }
+        let formattedNumber = formatter.string(from: NSNumber(value: unwrappedNumber))!
+        return formattedNumber
+    }
+    
     /// Tag: Convert from Electrical to Optical Domain
     func toOpticalDomain(frequency: String?, bandwidth: String?) -> (wavelength: String, spectralWidth: String) {
         // Optional Unwrapping
-        guard let frequency = frequency, let bandwidth = bandwidth else {
-            let wavelength = "-", spectralWidth = "-"
-            return (wavelength, spectralWidth)
-        }
-        guard let frequency = Double(frequency) , let bandwidth = Double(bandwidth) else {
+        guard let frequency = frequency, let bandwidth = bandwidth, let unwrappedFrequency = Double(frequency) , let unwrappedBandwidth = Double(bandwidth) else {
             let wavelength = "-", spectralWidth = "-"
             return (wavelength, spectralWidth)
         }
         // Unit Scaling
-        let scaledFrequency = frequency * 1E12
-        _ = bandwidth * 1E12
+        let scaledFrequency = unwrappedFrequency * 1E12
+        _ = unwrappedBandwidth * 1E12
         let lowerLimit = Double(self.lowerLimit)! * 1E12
         let upperLimit = Double(self.upperLimit)! * 1E12
         // Performing Calculations
