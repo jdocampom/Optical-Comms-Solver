@@ -6,7 +6,7 @@
  The target variable is controlled with the `SnellLawComputation` enum, which is required at the moment of calling the `computeVariable` instance method.
  
  It's worth mentioning that angles are measured in degrees.
- */
+*/
 import Foundation
 
 struct SnellLawComputation: Identifiable {
@@ -81,4 +81,4 @@ print("n2 = \(test2)")
 print("theta_i = \(test3)")
 print("theta_t = \(test4)")
 print("theta_ci = \(test5)")
-//: [Previous](@previous)  |  Page 3 of X  |  [Numerical Aperture](@next)
+//: [Previous](@previous)  |  Page 3 of X  |  [Maximum Acceptance Angle](@next)

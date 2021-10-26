@@ -4,7 +4,7 @@
 The following `struct` creates a custom data type used to initialise an electrical signal alongside with its parameters: frequency and bandwidth (both measured in Terahertz).
 
 It has an instance method that converts those electrical domain parameters to their optical domain equivalents measured in nanometres (wavelength and spectral width).
- */
+*/
 import Foundation
 
 struct ElectricalSignal: Identifiable {
@@ -74,11 +74,9 @@ struct ElectricalSignal: Identifiable {
         return (wavelength, spectralWidth)
     }
 }
-
 //: - Experiment:
 //: Modify the `electricalSignalTest` declaration to convert parameters from an electrical signal to the optical domain.
 //:
-
 let electricalSignalTest = ElectricalSignal(frequency: "350", bandwidth: "2.5")
 
 print("-\tElectrical Domain Data:")
@@ -89,5 +87,4 @@ print("")
 print("-\tOptical Domain Data:")
 print("Wavelength: \(electricalSignalTest.wavelength) nm")
 print("Bandwidth: \(electricalSignalTest.spectralWidth) nm")
-
 //: [Previous](@previous)  |  Page 2 of X  |  [Snell's Law](@next)

@@ -4,7 +4,7 @@
 The following `struct` creates a custom data type used to initialise an optical signal alongside with its parameters: wavelength and spectral width (both measured in nanometres).
 
 It has an instance method that converts those optical domain parameters to their electrical equivalents measured in THz (frequency, bandwidth and frequency range).
- */
+*/
 import Foundation
 
 struct OpticalSignal: Identifiable {
@@ -54,11 +54,9 @@ struct OpticalSignal: Identifiable {
         return (frequency, upperLimit, lowerLimit, bandwidth)
     }
 }
-
 //: - Experiment:
 //: Modify the `opticalSignalTest` declaration to convert parameters from an optical signal to the electrical domain.
 //:
-
 let opticalSignalTest = OpticalSignal(wavelength: "1550", spectralWidth: "10")
 
 print("-\tOptical Domain Data:")
@@ -69,6 +67,5 @@ print("-\tElectrical Domain Data:")
 print("Frequency: \(opticalSignalTest.frequency) THz")
 print("Bandwidth: \(opticalSignalTest.bandwidth) THz")
 print("Frequency Range: \(opticalSignalTest.lowerLimit) - \(opticalSignalTest.upperLimit) THz")
-
 //: Page 1 of X  |  [Domain Conversion (Part 2)](@next)
 
