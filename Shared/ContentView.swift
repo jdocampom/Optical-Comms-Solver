@@ -95,6 +95,18 @@ struct ContentView: View {
                         }
                     }
                 }
+                Section(header: Text("Normalised Frequency")) {
+                    List {
+                        NavigationLink(destination: ComputeVParameterForStepIndexFiber()) {
+                            Text("Step Index Fiber")
+                        }
+                    }
+                    List {
+                        NavigationLink(destination: ComputeVParameterForGradedIndexFiber()) {
+                            Text("Graded Index Fiber")
+                        }
+                    }
+                }
             }
             .navigationTitle("Optical Comms Solver")
         }

@@ -34,6 +34,9 @@
 		862590FD271B5F4400793567 /* ElectricalToOptical.swift in Sources */ = {isa = PBXBuildFile; fileRef = 862590FB271B5F4400793567 /* ElectricalToOptical.swift */; };
 		862590FF271B5F5300793567 /* ElectricalSignal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 862590FE271B5F5300793567 /* ElectricalSignal.swift */; };
 		86259100271B5F5300793567 /* ElectricalSignal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 862590FE271B5F5300793567 /* ElectricalSignal.swift */; };
+		8665D2EF27286AF700E744F1 /* NormalisedFrequencyCalculations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8665D2EE27286AF700E744F1 /* NormalisedFrequencyCalculations.swift */; };
+		8665D2F227286B4E00E744F1 /* ComputeVParameterForStepIndexFiber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8665D2F127286B4E00E744F1 /* ComputeVParameterForStepIndexFiber.swift */; };
+		8665D2F427286E5C00E744F1 /* ComputeVParameterForGradedIndexFiber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8665D2F327286E5C00E744F1 /* ComputeVParameterForGradedIndexFiber.swift */; };
 		8673F082271AF3F90094BF61 /* OpticalToElectrical.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8673F081271AF3F90094BF61 /* OpticalToElectrical.swift */; };
 		8673F083271AF3F90094BF61 /* OpticalToElectrical.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8673F081271AF3F90094BF61 /* OpticalToElectrical.swift */; };
 		86845CB9271A6383008B9764 /* OpticalCommsSolverApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86845CA9271A6381008B9764 /* OpticalCommsSolverApp.swift */; };
@@ -67,6 +70,9 @@
 		862590F8271B5ECA00793567 /* Resources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resources.swift; sourceTree = "<group>"; };
 		862590FB271B5F4400793567 /* ElectricalToOptical.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElectricalToOptical.swift; sourceTree = "<group>"; };
 		862590FE271B5F5300793567 /* ElectricalSignal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElectricalSignal.swift; sourceTree = "<group>"; };
+		8665D2EE27286AF700E744F1 /* NormalisedFrequencyCalculations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NormalisedFrequencyCalculations.swift; sourceTree = "<group>"; };
+		8665D2F127286B4E00E744F1 /* ComputeVParameterForStepIndexFiber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComputeVParameterForStepIndexFiber.swift; sourceTree = "<group>"; };
+		8665D2F327286E5C00E744F1 /* ComputeVParameterForGradedIndexFiber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComputeVParameterForGradedIndexFiber.swift; sourceTree = "<group>"; };
 		8673F081271AF3F90094BF61 /* OpticalToElectrical.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpticalToElectrical.swift; sourceTree = "<group>"; };
 		86845CA9271A6381008B9764 /* OpticalCommsSolverApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpticalCommsSolverApp.swift; sourceTree = "<group>"; };
 		86845CAA271A6381008B9764 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -216,6 +222,32 @@
 			path = Extras;
 			sourceTree = "<group>";
 		};
+		8665D2EC27286AD400E744F1 /* V Parameter Computations */ = {
+			isa = PBXGroup;
+			children = (
+				8665D2ED27286AE700E744F1 /* Models */,
+				8665D2F027286B0B00E744F1 /* Views */,
+			);
+			path = "V Parameter Computations";
+			sourceTree = "<group>";
+		};
+		8665D2ED27286AE700E744F1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8665D2EE27286AF700E744F1 /* NormalisedFrequencyCalculations.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8665D2F027286B0B00E744F1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8665D2F127286B4E00E744F1 /* ComputeVParameterForStepIndexFiber.swift */,
+				8665D2F327286E5C00E744F1 /* ComputeVParameterForGradedIndexFiber.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		86845CA3271A6381008B9764 = {
 			isa = PBXGroup;
 			children = (
@@ -228,13 +260,14 @@
 		86845CA8271A6381008B9764 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
-				86845CAB271A6383008B9764 /* Assets.xcassets */,
 				86845CA9271A6381008B9764 /* OpticalCommsSolverApp.swift */,
 				86845CAA271A6381008B9764 /* ContentView.swift */,
+				86845CAB271A6383008B9764 /* Assets.xcassets */,
 				862590F0271B3CFC00793567 /* Domain Conversion */,
 				861D31862727784E002516F7 /* Snell Law Computations */,
 				861D319927279D7B002516F7 /* Acceptance Angle Computations */,
 				861D31A22727A37D002516F7 /* Numerical Aperture Computations */,
+				8665D2EC27286AD400E744F1 /* V Parameter Computations */,
 				862590F7271B5EA300793567 /* Extras */,
 			);
 			path = Shared;
@@ -355,6 +388,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8665D2EF27286AF700E744F1 /* NormalisedFrequencyCalculations.swift in Sources */,
 				861D318A27277893002516F7 /* SnellLawComputation.swift in Sources */,
 				861D319D27279DD5002516F7 /* MaxAcceptanceAngleCalculation.swift in Sources */,
 				8621DE5D271E37F700FC2E81 /* DecimalField.swift in Sources */,
@@ -371,11 +405,13 @@
 				861D31B02727A604002516F7 /* ComputeNAFromUnknownDeltaN.swift in Sources */,
 				861D31A62727A3AB002516F7 /* NumericalApertureCalculation.swift in Sources */,
 				861D31AE2727A58F002516F7 /* ComputeNAFromKnownDeltaN.swift in Sources */,
+				8665D2F227286B4E00E744F1 /* ComputeVParameterForStepIndexFiber.swift in Sources */,
 				86845CB9271A6383008B9764 /* OpticalCommsSolverApp.swift in Sources */,
 				861D31A127279E1B002516F7 /* ComputeAcceptanceAngleFromCriticalAngle.swift in Sources */,
 				862590FF271B5F5300793567 /* ElectricalSignal.swift in Sources */,
 				862590F9271B5ECA00793567 /* Resources.swift in Sources */,
 				861D31A82727A3F9002516F7 /* ComputeNAFromAcceptanceAngle.swift in Sources */,
+				8665D2F427286E5C00E744F1 /* ComputeVParameterForGradedIndexFiber.swift in Sources */,
 				861D31AA2727A49C002516F7 /* ComputeNAFromCriticalAngle.swift in Sources */,
 				861D319027277ED6002516F7 /* ComputeIncidentAngle_SnellLaw.swift in Sources */,
 				8673F082271AF3F90094BF61 /* OpticalToElectrical.swift in Sources */,
